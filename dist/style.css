@@ -287,6 +287,24 @@
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-\[80vh\] {
+    height: 80vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+  .h-fit {
+    height: fit-content;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -377,6 +395,12 @@
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -575,6 +599,16 @@
       margin-top: calc(var(--spacing) * 30);
     }
   }
+  .sm\:h-\[30vh\] {
+    @media (width >= 40rem) {
+      height: 30vh;
+    }
+  }
+  .sm\:h-\[60vh\] {
+    @media (width >= 40rem) {
+      height: 60vh;
+    }
+  }
   .sm\:min-h-\[60vh\] {
     @media (width >= 40rem) {
       min-height: 60vh;
@@ -613,6 +647,11 @@
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:h-screen {
+    @media (width >= 48rem) {
+      height: 100vh;
     }
   }
   .md\:max-w-2xl {
