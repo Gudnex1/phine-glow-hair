@@ -203,6 +203,9 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
   .sticky {
     position: sticky;
   }
@@ -259,6 +262,9 @@
   }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
+  }
+  .contents {
+    display: contents;
   }
   .flex {
     display: flex;
