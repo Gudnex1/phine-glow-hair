@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phine Glow Hair's</title>
+    <title>Phine Glow Hair</title>
+    <!-- Link to Tailwind CSS (or your compiled CSS file) -->
     <link href="./dist/style.css" rel="stylesheet">
 </head>
 
-<body class="">
+<body>
+    <!-- Sticky Header with Navigation -->
     <header id="home" class="sticky top-0 z-50 md:border-b md:border-border backdrop-blur">
         <div class="container mx-auto">
-            <nav class="container mx-auto flex items-center justify-between py-5">
+            <nav class="container mx-auto flex items-center justify-between py-5 px-3">
+                <!-- Brand/Logo -->
                 <a href="#" class="items-center gap-2 font-semibold tracking-tight pl-3">
                     <span class="text-xl">Phine Glow Hair</span>
                 </a>
+                <!-- Desktop Navigation Links -->
                 <div class="hidden md:flex gap-5 tracking-tight text-[17px] text-gray-600">
                     <a href="#home" class="hover:text-black transition duration-200">Home</a>
                     <a href="#" class="hover:text-black transition duration-200">About</a>
@@ -24,20 +28,23 @@
         </div>
     </header>
     <main>
+        <!-- Hero Section: Main introduction and call-to-action buttons -->
         <section id="hero" class="bg-gray-50">
             <div
                 class="container mx-auto max-w-6xl flex flex-col pt-30 md:justify-center md:pt-0 items-center text-center px-2 md:px-0 min-h-[70vh] md:h-screen">
                 <div class="max-w-4xl flex flex-col items-center justify-center text-center space-y-5">
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Phine Glow Hair</h1>
                     <h3 class="text-2xl md:text-4xl">Elevate Your Glow</h3>
-                    <h4 class="md:text-lg text-gray-500 mb-8 md:max-w-2xl text-sm ">Premium human hair bundles, wigs,
-                        and
-                        closures—crafted for timeless elegance, natural movement, and lasting quality.</h4>
+                    <h4 class="md:text-lg text-gray-500 mb-8 md:max-w-2xl text-sm ">
+                        Premium human hair bundles, wigs, and closures—crafted for timeless elegance, natural movement,
+                        and lasting quality.
+                    </h4>
                 </div>
+                <!-- Call-to-action Buttons -->
                 <div class="flex flex-col md:flex-row items-center gap-4 mt-10 w-full sm:w-auto">
                     <button
                         class="cursor-pointer relative group flex items-center text-white  border-2 border-black rounded-xl transition-all duration-600 ease-in-out hover:bg-slate-800 hover:text-white px-11 py-4 bg-slate-900 r">
-                        <!-- SVG Icon -->
+                        <!-- SVG Icon for left arrow -->
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="absolute left-3 w-6 h-6 text-white group-hover:text-white transition-all duration-600 ease-in-out group-hover:translate-x-1"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,7 +55,7 @@
                     </button>
                     <button
                         class="cursor-pointer relative group flex items-center justify-end text-black  border-2 border-gray-500 border-opacity-100 rounded-xl transition-all duration-600 ease-in-out hover:bg-gray-300 hover:text-black px-10 py-4 bg-white">
-                        <!-- SVG Icon -->
+                        <!-- SVG Icon for left arrow -->
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="absolute left-3 w-6 h-6 text-black group-hover:text-black transition-all duration-600 ease-in-out group-hover:translate-x-1"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,16 +66,18 @@
                     </button>
                 </div>
         </section>
-        <!-- Product Section -->
+        <!-- Product Section: Featured products grid -->
         <section id="products" class="container px-4 py-20 mx-auto max-w-7xl">
             <header class="mb-15">
                 <h2 class="text-2xl md:text-3xl font-semibold tracking-tight whitespace-nowrap">Featured Collection</h2>
                 <p class="text-muted-foreground mt-2">Thoughtfully curated best-sellers loved for their quality and
                     finish.</p>
             </header>
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Product Card 1 -->
                 <article class="group rounded-xl border border-border p-3 shadow-sm transition-colors">
                     <div class="overflow-hidden rounded-lg">
+                        <!-- Product Image Placeholder -->
                         <img src="/placeholder.svg" alt="Silky Straight human hair bundle from Phine Glow Hair"
                             class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02] bg-gray-100"
                             loading="lazy" />
@@ -79,6 +88,7 @@
                     </div>
                 </article>
 
+                <!-- Product Card 2 -->
                 <article class="group rounded-xl border border-border p-3 shadow-sm transition-colors">
                     <div class="overflow-hidden rounded-lg">
                         <img src="/placeholder.svg" alt="Body Wave wig with HD lace from Phine Glow Hair"
@@ -91,6 +101,19 @@
                     </div>
                 </article>
 
+                <!-- Product Card 3 -->
+                <article class="group rounded-xl border border-border p-3 shadow-sm transition-colors">
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="/placeholder.svg" alt="Deep Curly closure 4x4 and 5x5 from Phine Glow Hair"
+                            class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02] bg-gray-100"
+                            loading="lazy" />
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-medium">Deep Curly Closure</h3>
+                        <p class="md:text-sm text-xs tracking-tight ">4×4 / 5×5 · Tight coils</p>
+                    </div>
+                </article>
+                <!-- Product Card 4 -->
                 <article class="group rounded-xl border border-border p-3 shadow-sm transition-colors">
                     <div class="overflow-hidden rounded-lg">
                         <img src="/placeholder.svg" alt="Deep Curly closure 4x4 and 5x5 from Phine Glow Hair"
@@ -104,14 +127,40 @@
                 </article>
             </div>
         </section>
-        <!-- Rating Summary -->
-        <section class="mx-auto max-w-7xl px-6 py-12" id="reviews">
+        <section id="CTA" class="bg-gradient-to-br from-gray-300 to-black container px-4 py-4 mx-auto max-w-7xl">
+            <div class="border-2 border-white flex flex-col md:flex-row px-4 py-10">
+                <div class="flex flex-col  md:w-1/2  md:space-y-7 space-y-2 md:px-5 mx-2">
+                    <span class="text-black italic font-medium text-2xl font-serif">Why Phine Glow Hairs</span>
+                    <span class="text-white font-bold font-sans md:text-6xl md:max-w-xl tracking-tight text-4xl">Longer, Thicker And Natural Looking Hairs in Seconds        
+                    </span>
+                    <button
+                        class="cursor-pointer relative group flex items-center justify-end text-black  rounded-full transition-all duration-600 ease-in-out hover:bg-gray-300 px-10 py-3 self-start bg-white md:max-w-[180px] md:w-full">
+                        <!-- SVG Icon for left arrow -->
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="absolute left-3 w-6 h-6 text-black group-hover:text-black transition-all duration-600 ease-in-out group-hover:translate-x-[50%]"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                        <span class="text-sm font-medium pl-3">Shop Now</span>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center md:w-1/2">
+                    <span class="text-black italic font-medium text-lg">Why Phine Glow Hairs</span>
+
+                </div>
+                
+            </div>
+
+        </section>
+        <!-- Rating Summary: Overall rating and featured review -->
+        <section class="mx-auto max-w-7xl px-6 py-12 container" id="reviews">
             <header class="mb-10">
                 <h2 class="text-2xl md:text-3xl font-semibold tracking-tight whitespace-nowrap">Customers Review</h2>
                 <p class="text-muted-foreground mt-2">Thoughtfully curated best-sellers loved for their quality and
                     finish.</p>
             </header>
             <div class="grid sm:grid-cols-2 gap-6 items-center">
+                <!-- Average Rating Card -->
                 <div class="p-6 rounded-2xl border border-slate-200 bg-white/70 backdrop-blur">
                     <div class="flex items-center gap-3">
                         <div class="text-3xl font-bold">4.9</div>
@@ -120,12 +169,14 @@
                         </div>
                     </div>
                     <p class="mt-2 text-slate-600">Based on 128 verified reviews</p>
+                    <!-- Progress Bar for rating -->
                     <div class="mt-4 h-2 rounded-full bg-slate-100">
                         <div
                             class="h-full w-[96%] rounded-full bg-gradient-to-r from-gold-600 via-gold-500 to-amber-400">
                         </div>
                     </div>
                 </div>
+                <!-- Featured Review Card -->
                 <div class="p-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-50 to-white">
                     <p class="text-slate-700">“From the moment I walked in, I felt taken care of. The team listened to
                         exactly what I wanted and the results were flawless.”</p>
@@ -140,7 +191,7 @@
                 </div>
             </div>
 
-            <!-- Reviews Grid -->
+            <!-- Reviews Grid: Individual customer reviews -->
             <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 <!-- Card 1 -->
                 <article
@@ -157,8 +208,7 @@
                         <div class="text-gold-500" aria-hidden="true">★★★★</div>
                     </div>
                     <p class="mt-4 text-slate-700">Absolutely thrilled with my color! The dimension is stunning and my
-                        hair
-                        feels healthier than ever.</p>
+                        hair feels healthier than ever.</p>
                     <footer class="mt-4 text-xs text-slate-500">Service: Balayage & Gloss</footer>
                 </article>
 
@@ -177,8 +227,7 @@
                         <div class="text-gold-500" aria-hidden="true">★★★★★</div>
                     </div>
                     <p class="mt-4 text-slate-700">Best fade in town. Clean, sharp, and grows out perfectly. Friendly
-                        staff
-                        and chill vibe.</p>
+                        staff and chill vibe.</p>
                     <footer class="mt-4 text-xs text-slate-500">Service: Cut & Finish</footer>
                 </article>
 
@@ -235,8 +284,7 @@
                         <div class="text-gold-500" aria-hidden="true">★★★★★</div>
                     </div>
                     <p class="mt-4 text-slate-700">Protective style was flawless and lasted beautifully. Super gentle
-                        and
-                        professional.</p>
+                        and professional.</p>
                     <footer class="mt-4 text-xs text-slate-500">Service: Braids</footer>
                 </article>
 
@@ -255,59 +303,69 @@
                         <div class="text-gold-500" aria-hidden="true">★★★★★</div>
                     </div>
                     <p class="mt-4 text-slate-700">Stylists are talented and kind. Loved the scalp treatment and
-                        blowout.
-                    </p>
+                        blowout.</p>
                     <footer class="mt-4 text-xs text-slate-500">Service: Treatment & Blowout</footer>
                 </article>
             </div>
 
-            <!-- Callout -->
+            <!-- Callout: Booking prompt -->
             <div
                 class="mt-12 relative overflow-hidden rounded-2xl border border-slate-200 p-8 bg-gradient-to-br from-white to-gray-600 text-white">
+                <!-- Decorative blurred background circle -->
                 <div class="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
                 <div class="relative">
                     <h2 class="text-2xl sm:text-3xl font-semibold">Ready for your glow-up?</h2>
                     <p class="mt-2 text-white/90 max-w-2xl">Book your appointment today and experience premium hair care
                         with a personal touch.</p>
                     <div class="mt-5 flex flex-wrap gap-3">
+                        <!-- Call to Book Button -->
                         <a href="tel:+10000000000"
-                            class="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-5 py-2.5 font-medium hover:bg-white/90 transition">
+                            class="inline-flex items-center justify-center rounded-full bg-white text-slate-900 px-5 py-2.5 font-medium hover:bg-slate-900/90 hover:text-white transition group">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#000000" class="mr-2 transition-colors duration-200 group-hover:fill-white">
+                                <path
+                                    d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" />
+                            </svg>
                             Call to Book
                         </a>
-                        <a href="mailto:hello@phineglowhair.example"
-                            class="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-2.5 font-medium hover:bg-white/10 transition">
+                        <!-- Email Us Button -->
+                        <a href="mailto:hello@phineglowhair.com"
+                            class="inline-flex items-center justify-center rounded-full border border-white/30 px-5 py-2.5 font-medium hover:bg-white/10 transition bg-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#ffffff" class="mr-2">
+                                <path
+                                    d="M264-288q-29.7 0-50.85-21.15Q192-330.3 192-360v-384q0-29.7 21.15-50.85Q234.3-816 264-816h528q29.7 0 50.85 21.15Q864-773.7 864-744v384q0 29.7-21.15 50.85Q821.7-288 792-288H264Zm264-192L264-656v296h528v-296L528-480Zm0-86 264-178H264l264 178ZM120-144q-29 0-50.5-21.5T48-216v-456h72v456h600v72H120Zm672-512v-88H264v88-88h528v88Z" />
+                            </svg>
                             Email Us
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FAQs -->
+        <!-- FAQs: Frequently Asked Questions section -->
         <section id="faqs" class="mx-auto max-w-7xl px-6 py-14">
             <h2 class="text-2xl font-semibold">FAQs</h2>
             <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <!-- FAQ Item 1 -->
                 <details class="group rounded-xl border border-slate-200 p-5 bg-white open:shadow-md">
                     <summary class="cursor-pointer font-medium flex items-center justify-between">
                         Do you do home delivery's?
+                        <!-- Arrow icon rotates when open -->
                         <span class="ml-4 text-slate-400 group-open:rotate-180 transition">⌄</span>
                     </summary>
                     <p class="mt-2 text-slate-600">Yes we ship all around lagos and its environs</p>
                 </details>
+                <!-- FAQ Item 2 -->
                 <details class="group rounded-xl border border-slate-200 p-5 bg-white open:shadow-md">
                     <summary class="cursor-pointer font-medium flex items-center justify-between">
                         What products do you use?
                         <span class="ml-4 text-slate-400 group-open:rotate-180 transition">⌄</span>
                     </summary>
                     <p class="mt-2 text-slate-600">We use salon-grade products chosen for performance and hair health.
-                        We’re
-                        happy to recommend a routine.</p>
+                        We’re happy to recommend a routine.</p>
                 </details>
             </div>
         </section>
-    </main>
-    </section>
-
-
     </main>
 </body>
 
