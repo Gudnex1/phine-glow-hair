@@ -28,10 +28,6 @@
                     <a href="index.html" class="text-slate-600 hover:text-slate-900 transition">Home</a>
                     <a href="#reviews" class="text-slate-600 hover:text-slate-900 transition">Products</a>
                     <a href="#faqs" class="text-slate-600 hover:text-slate-900 transition">FAQs</a>
-                    <a href="tel:+10000000000"
-                        class="inline-flex items-center gap-2 rounded-full bg-slate-900 text-white px-4 py-2 hover:bg-slate-800 transition shadow-sm">
-                        Book Now
-                    </a>
                 </div>
             </nav>
         </div>
@@ -39,146 +35,223 @@
 
     <!-- Main Content -->
     <main>
-        <section id="appointment">
-            <div class="flex md:flex-row flex-col gap-10 container bg-slate-100">
+        <section id="appointment" class=" bg-gradient-to-br from-gray-500 to-gray-200 pb-7">
+            <div class="flex md:flex-row flex-col gap-10 container">
                 <!-- Left Side - Image and Text -->
                 <div class="w-1/2">
 
                 </div>
 
-                <!-- <div class="w-1/2"> -->
-                    <!-- Right Side - Booking Form -->
-                    <div class="bg-gray-500 px-6 shadow-xl flex flex-col items-center justify-center max-w-3xs mx-auto -mt-50">
-                        <h3 class="text-white text-2xl font-light text-center mb-4 max-w-[200px] mx-auto mt-10">BOOK AN
-                            APPOINTMENT</h3>
+                <!-- Right Side - Booking Form -->
+                <div
+                    class="bg-gray-700 px-6 shadow-xl flex flex-col items-center justify-center max-w-3xs mx-auto -mt-50">
+                    <h3
+                        class="text-white text-2xl font-light text-center mb-4 max-w-[200px] mx-auto mt-10 tracking-tight">
+                        BOOK AN
+                        APPOINTMENT</h3>
 
-                        <form class="flex flex-col gap-2 items-start ">
-                            <div class="flex flex-row gap-2 items-start max-w-[300px]">
-                                <!-- First Row -->
-                                <input type="text" placeholder="Full Name"
-                                    class="px-2 py-2 rounded-sm border-0 focus:ring-1 focus:ring-slate-800 outline-none w-full placeholder:text-xs ">
-                                <input type="text" placeholder="Full Name"
-                                    class="px-2 py-2 rounded-sm border-0 focus:ring-1 focus:ring-slate-800 outline-none w-full placeholder:text-xs ">
-                            </div>
-                            <div class="flex flex-col gap-2 w-full">
-                                <!-- Email -->
-                                <input type="email" placeholder="Email Address"
-                                    class=" px-2 py-2 rounded-sm border-0 placeholder:text-xs focus:ring-1 focus:ring-gray-600 outline-none ">
+                    <form class="flex flex-col gap-2 items-start ">
+                        <div class="flex flex-row gap-2 items-start max-w-[300px]">
+                            <!-- First Row -->
+                            <input type="text" placeholder="First Name"
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
+                            <input type="text" placeholder="Surname Name"
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
+          
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <!-- Email -->
+                            <label for="Email"></label>
+                            <input type="email" placeholder="Email Address"
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
 
-                                <!-- Phone -->
-                                <input type="tel" placeholder="Phone Number"
-                                    class=" px-2 py-2 rounded-sm border-0 placeholder:text-xs focus:ring-1 focus:ring-gray-600 outline-none">
+                            <!-- Phone -->
+                            <label for="number"></label>
+                            <input type="tel" placeholder="Phone Number" id="number" name="number"
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
 
 
 
-                                <!-- Date and Time -->
+                            <!-- Date -->
+                            <input type="date" placeholder="Select Date"
+                                class=" px-2 py-2 placeholder:text-xs rounded-sm border-0 focus:ring-2 focus:ring-gray-600 outline-none text-xs font-mono">
+                            <!-- Time -->
+                            <select
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:outline-gray-300 bg-gray-50 outline-0">
+                                <option value="">Select Time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                            <!-- Service -->
+                            <select
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:outline-gray-300 bg-gray-50 outline-0">
+                                <option value="">Select Service</option>
+                                <option value="hair-color">Hair Color</option>
+                                <option value="highlights">Highlights</option>
+                                <option value="balayage">Balayage</option>
+                                <option value="cut-color">Cut & Color</option>
+                                <option value="consultation">Color Consultation</option>
+                            </select>
 
-                                <input type="date"
-                                    class=" px-2 py-2 placeholder:text-xs rounded-sm border-0 focus:ring-2 focus:ring-gray-600 outline-none text-black text-xs">
-
-                                <select
-                                    class="px-1 py-2 text-xs rounded-sm border-0 focus:ring-2 focus:ring-gray-600 outline-none text-black">
-                                    <option value="">Select Time</option>
-                                    <option value="09:00">9:00 AM</option>
-                                    <option value="10:00">10:00 AM</option>
-                                    <option value="11:00">11:00 AM</option>
-                                    <option value="12:00">12:00 PM</option>
-                                    <option value="13:00">1:00 PM</option>
-                                    <option value="14:00">2:00 PM</option>
-                                    <option value="15:00">3:00 PM</option>
-                                    <option value="16:00">4:00 PM</option>
-                                    <option value="17:00">5:00 PM</option>
-                                </select>
-                                <!-- Service -->
-                                <select
-                                    class=" px-2 py-2  rounded-sm border-0 focus:ring-2 focus:ring-gray-600 outline-none text-black text-xs">
-                                    <option value="">Select Service</option>
-                                    <option value="hair-color">Hair Color</option>
-                                    <option value="highlights">Highlights</option>
-                                    <option value="balayage">Balayage</option>
-                                    <option value="cut-color">Cut & Color</option>
-                                    <option value="consultation">Color Consultation</option>
-                                </select>
-
-                                <!-- Comments -->
-                                <!-- <textarea placeholder="Additional Comments (Optional)" rows="2"
+                            <!-- Comments -->
+                            <!-- <textarea placeholder="Additional Comments (Optional)" rows="2"
                             class=" px-2 py-2 rounded border-0 focus:ring-2 focus:ring-gray-600 outline-none resize-none"></textarea> -->
-                            </div>
+                        </div>
 
-                            <!-- Submit Button -->
-                            <a href="whatsapplink://send?phone=9185963260&text=Hello%20Phine%20Glow%20Hairs,%20I%20would%20like%20to%20book%20an%20appointment."
-                                class="inline-flex items-center justify-center rounded border border-white/30 px-4 py-2 font-medium hover:bg-gray-200/10 transition bg-white mx-auto mt-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960"
-                                    width="21px" fill="#000000">
+                        <!-- Submit Button -->
+                        <!-- From Uiverse.io by Itskrish01 -->
+                        <button
+                            class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-gray-500 rounded-md group mx-auto w-[80%] mt-4">
+                            <span
+                                class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-gray-700 rounded group-hover:-mr-4 group-hover:-mt-4">
+                                <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                            </span>
+                            <span
+                                class="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-gray-700 rounded group-hover:-ml-4 group-hover:-mb-4">
+                                <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                            </span>
+                            <span
+                                class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-gray-600 rounded-md group-hover:translate-x-0"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px" fill="#ffffff">
                                     <path
                                         d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
                                 </svg>
-                                <span class="font-sans ml-2 text- italic">Book Appointment</span>
-                            </a>
-                        </form>
+                            <span
+                                class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white ml-2">
+                                Book Appointment</span>
+                        </button>
 
-                        <!-- Additional Info -->
-                        <div class="mt-3 text-center">
-                            <p class="text-white text-sm">We'll confirm your appointment within 24 hours</p>
-                            <p class="text-white text-xs mt-1 pb-5">For same-day appointments, please call us directly
-                            </p>
+                        <!-- <a href="whatsapplink://send?phone=9185963260&text=Hello%20Phine%20Glow%20Hairs,%20I%20would%20like%20to%20book%20an%20appointment."
+                            class="inline-flex items-center justify-center rounded border border-white/30 px-4 py-2 font-medium hover:bg-slate-800 transition bg-slate-900 mx-auto mt-3 w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px"
+                                fill="#ffffff">
+                                <path
+                                    d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                            </svg>
+                            <span class="font-sans text-white ml-2 italic">Book Appointment</span>
+                        </a> -->
+                    </form>
+
+                    <!-- Additional Info -->
+                    <div class="relative inline-block group mt-3 pb-3">
+                        <button
+                            class="relative px-4 py-2 text-sm font-semibold text-white bg-slate-600/90 rounded-xl hover:bg-gray-700/90 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-300 overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl group-hover:opacity-75 transition-opacity">
+                            </div>
+                    
+                            <span class="relative flex items-center gap-2">
+                                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="w-4 h-4">
+                                    <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2"
+                                        stroke-linejoin="round" stroke-linecap="round"></path>
+                                </svg>
+                    
+                            </span>
+                        </button>
+                    
+                        <div
+                            class="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2">
+                            <div
+                                class="relative p-4 bg-gradient-to-br from-gray-900/95 to-gray-800/95 backdrop-blur-md rounded-2xl border border-white/10 shadow-[0_0_30px_rgba(79,70,229,0.15)]">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-indigo-500/20">
+                                        <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-indigo-400">
+                                            <path clip-rule="evenodd"
+                                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-sm font-semibold text-white">Important Information</h3>
+                                </div>
+                    
+                                <div class="space-y-2">
+                                    <p class="text-sm text-gray-300">
+                                        We'll confirm your appointment within 24 hours.
+                                    </p>
+                                    <div class="flex items-center gap-2 text-xs text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+                                            <path d="M444-384v-336h72v336h-72Zm0 144v-72h72v72h-72Z" />
+                                        </svg>
+                                        <span>For same-day appointments, please call us directly</span>
+                                    </div>
+                                </div>
+                    
+                                <div
+                                    class="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500/10 to-purple-500/10 blur-xl opacity-50">
+                                </div>
+                    
+                                <div
+                                    class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-gradient-to-br from-gray-900/95 to-gray-800/95 rotate-45 border-r border-b border-white/10">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- <div class="mt-3 text-center">
+                        <p class="text-black text-sm">We'll confirm your appointment within 24 hours</p>
+                        <p class="text-black text-xs mt-1 pb-5">For same-day appointments, please call us directly
+                        </p>
+                    </div> -->
                 </div>
             </div>
+            </div>
         </section>
-        <section class="py-16 bg-muted">
+        <section class="py-16 mt-20">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-white rounded-lg shadow-lg p-8">
-                    <h2 class="text-4xl font-bold text-center mb-8 text-foreground">Contact Us</h2>
-        
+                    <h2 class="text-4xl font-bold text-center mb-8 ">Contact Us</h2>
+
                     <form class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label htmlFor="firstName" class="block text-sm font-medium text-foreground mb-2">First
+                                <label for="firstName" class="block text-sm font-medium  mb-2">First
                                     Name</label>
                                 <input type="text" id="firstName" name="firstName" required
-                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent bg-background" />
+                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent" />
                             </div>
                             <div>
-                                <label htmlFor="lastName" class="block text-sm font-medium text-foreground mb-2">Last
+                                <label for="lastName" class="block text-sm font-medium  mb-2">Last
                                     Name</label>
                                 <input type="text" id="lastName" name="lastName" required
-                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent bg-background" />
+                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent" />
                             </div>
                         </div>
-        
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label htmlFor="email" class="block text-sm font-medium text-foreground mb-2">Email
-                                    Address</label>
+                                <label for="email" class="block text-sm font-medium  mb-2">Your
+                                    Email</label>
                                 <input type="email" id="email" name="email" required
-                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent bg-background" />
+                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent" />
                             </div>
                             <div>
-                                <label htmlFor="phone" class="block text-sm font-medium text-foreground mb-2">Phone
+                                <label for="phone" class="block text-sm font-medium  mb-2">Phone
                                     Number</label>
                                 <input type="tel" id="phone" name="phone" required
-                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent bg-background" />
+                                    class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent" />
                             </div>
                         </div>
-        
-                        
-        
-                        
+
+
+
+
                         <div>
-                            <label htmlFor="notes" class="block text-sm font-medium text-foreground mb-2">Special Requests
-                                or Notes</label>
+                            <label for="notes" class="block text-sm font-medium  mb-2">Your Message</label>
                             <textarea id="notes" name="notes" rows={4}
                                 placeholder="Any specific requests or information we should know..."
-                                class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent bg-background resize-none"></textarea>
+                                class="w-full px-4 py-3 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent resize-none"></textarea>
                         </div>
-        
-                        {/* Submit Button */}
+
                         <div class="text-center pt-6">
                             <button type="submit"
-                                class="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-4 px-8 rounded-md transition-colors duration-200 transform hover:scale-105">
-                                Book Appointment
+                                class="bg-gray-300 hover:bg-gary-500/90 font-semibold py-4 px-8 rounded-md transition-colors duration-200 transform hover:scale-105">
+                                Contact Now
                             </button>
                         </div>
                     </form>
@@ -194,10 +267,10 @@
                     services using naturally derived products that protect and nourish your hair.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8 mt-10">
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
@@ -208,8 +281,8 @@
                 </div>
 
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                 clip-rule="evenodd" />
@@ -221,8 +294,8 @@
                 </div>
 
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
                                 clip-rule="evenodd" />
@@ -234,19 +307,6 @@
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-16">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h3 class="text-xl font-semibold mb-2">Phine Glow Hairs</h3>
-            <p class="text-gray-300 mb-4">Color with Total Confidence</p>
-            <div class="flex justify-center items-center space-x-4">
-                <span>📍 123 Beauty Street, Hair City, HC 12345</span>
-                <span>📞 +1 (800) 596-3260</span>
-                <span>✉️ info@phineglowshairs.com</span>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
