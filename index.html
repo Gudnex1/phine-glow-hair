@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phine Glow Hair</title>
-    <!-- Link to Tailwind CSS (or your compiled CSS file) -->
     <link href="./dist/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Indie+Flower&display=swap"
         rel="stylesheet">
+    <script src="./src/js/script.js" defer></script>
 </head>
 
 <body>
     <!-- Sticky Header with Navigation -->
     <header id="home" class="sticky top-0 z-50 md:border-b backdrop-blur">
         <div class="container mx-auto ">
-            <nav class="flex items-center justify-between py-5 px-3">
+            <nav class="flex items-center justify-between p-5 ">
                 <!-- Brand/Logo -->
                 <a href="#" class="items-center gap-2 font-semibold tracking-tight pl-3">
                     <span class="text-xl">Phine Glow Hair</span>
@@ -25,7 +25,9 @@
                     <a href="/" class="text-slate-600 hover:text-slate-900 transition">Home</a>
                     <a href="#reviews" class="text-slate-600 hover:text-slate-900 transition">Products</a>
                     <a href="contact.html" class="text-slate-600 hover:text-slate-900 transition">Contact</a>
-                    <a href="contact.html" class="md:hidden   hover:bg-slate-800 transition items-center rounded-full bg-slate-900 text-white px-4 py-2 hover:scale-105">Book now</a>
+                    <a href="contact.html"
+                        class="md:hidden hover:bg-slate-800 transition items-center rounded-full bg-slate-900 text-white px-4 py-2 hover:scale-105">Book
+                        now</a>
                     <a href="contact.html"
                         class="group relative md:flex justify-center items-center text-zinc-600 text-sm font-bold hidden">
                         <div
@@ -39,6 +41,20 @@
                         </div>
                     </a>
 
+                </div>
+                <button id="menu-btn" class="flex hamburger md:hidden mt-2" type="button">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+                <!-- mobile menu -->
+                <div id="menu" class="absolute hidden p-6 rounded-lg bg-slate-900 right-6 left-6 top-20 z-100">
+                    <div
+                        class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white text-center">
+                        <a href="#reviews" class="hover:text-slate-500 transition">Products</a>
+                        <a href="contact.html" class="hover:text-slate-500 transition">Contact</a>
+                        <a href="#" class="w-full pt-5 border-t border-gray-400 text-center">Login</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -85,7 +101,8 @@
         <!-- Product Section: Featured products grid -->
         <section id="products" class="container px-4 py-20 mx-auto max-w-7xl">
             <header class="mb-15">
-                <h2 class="text-2xl md:text-3xl font-semibold tracking-tight whitespace-nowrap font-rail">Featured Collection</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold tracking-tight whitespace-nowrap font-rail">Featured
+                    Collection</h2>
                 <p class="text-muted-foreground mt-2">Thoughtfully curated best-sellers loved for their quality and
                     finish.</p>
             </header>
@@ -95,7 +112,7 @@
                     <div class="overflow-hidden rounded-lg">
                         <!-- Product Image Placeholder -->
                         <img src="/placeholder.svg" alt="Silky Straight human hair bundle from Phine Glow Hair"
-                            class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02] bg-gray-100"
+                            class="aspect-[4/3] w-full object-cover  transition-transform duration-300 group-hover:scale-[1.02] bg-gray-100"
                             loading="lazy" />
                     </div>
                     <div class="mt-4">
@@ -172,7 +189,8 @@
         <!-- Rating Summary: Overall rating and featured review -->
         <section class="mx-auto max-w-7xl px-6 py-12 md:mt-40 mt-20 container" id="reviews">
             <header class="mb-10">
-                <h2 class="text-2xl md:text-3xl font-semibold tracking-tight whitespace-nowrap font-rail">Customers Review</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold tracking-tight whitespace-nowrap font-rail">Customers
+                    Review</h2>
                 <p class="text-muted-foreground mt-2">Thoughtfully curated best-sellers loved for their quality and
                     finish.</p>
             </header>
@@ -198,8 +216,8 @@
                     <p class="text-slate-700">“From the moment I walked in, I felt taken care of. The team listened to
                         exactly what I wanted and the results were flawless.”</p>
                     <div class="mt-4 flex items-center gap-3">
-                        <img src="/images/reviewer-1.png" alt="Reviewer A headshot"
-                            class="h-10 w-10 rounded-full object-cover" loading="lazy" />
+                        <img src="/images/reviewer-1.png" alt="Reviewer A" class="h-10 w-10 rounded-full object-cover"
+                            loading="lazy" />
                         <div>
                             <p class="text-sm font-medium">Amelia</p>
                             <p class="text-xs text-slate-500">Balayage & Style</p>
@@ -215,8 +233,8 @@
                     class="group rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl transition will-change-transform hover:-translate-y-0.5">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3">
-                            <img src="/images/reviewer-1.png" alt="Amelia headshot"
-                                class="h-10 w-10 rounded-full object-cover" loading="lazy" />
+                            <img src="/images/reviewer-1.png" alt="Amelia"
+                                class="h-10 w-10 rounded-full object-cover bg-gray-100" loading="lazy" />
                             <div>
                                 <h3 class="font-semibold">Amelia</h3>
                                 <p class="text-xs text-slate-500">2 weeks ago</p>
@@ -234,8 +252,8 @@
                     class="group rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl transition will-change-transform hover:-translate-y-0.5">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3">
-                            <img src="/images/reviewer-2.png" alt="Marcus headshot"
-                                class="h-10 w-10 rounded-full object-cover" loading="lazy" />
+                            <img src="/images/reviewer-2.png" alt="Marcus"
+                                class="h-10 w-10 rounded-full object-cover bg-gray-100" loading="lazy" />
                             <div>
                                 <h3 class="font-semibold">Marcus</h3>
                                 <p class="text-xs text-slate-500">1 month ago</p>
@@ -253,8 +271,8 @@
                     class="group rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl transition will-change-transform hover:-translate-y-0.5">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3">
-                            <img src="/images/reviewer-3.png" alt="Claire headshot"
-                                class="h-10 w-10 rounded-full object-cover" loading="lazy" />
+                            <img src="/images/reviewer-3.png" alt="Claire"
+                                class="h-10 w-10 rounded-full object-cover bg-gray-100" loading="lazy" />
                             <div>
                                 <h3 class="font-semibold">Claire</h3>
                                 <p class="text-xs text-slate-500">3 weeks ago</p>
@@ -272,8 +290,8 @@
                     class="group rounded-2xl border border-slate-200 bg-white p-6 hover:shadow-xl transition will-change-transform hover:-translate-y-0.5">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-3">
-                            <img src="/images/reviewer-4.png" alt="Leo headshot"
-                                class="h-10 w-10 rounded-full object-cover" loading="lazy" />
+                            <img src="/images/reviewer-4.png" alt="Leo"
+                                class="h-10 w-10 rounded-full object-cover bg-gray-100" loading="lazy" />
                             <div>
                                 <h3 class="font-semibold">Leo</h3>
                                 <p class="text-xs text-slate-500">5 days ago</p>
