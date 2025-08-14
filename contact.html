@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Phine Glow Hairs</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+    <link href="./dist/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body class="bg-gray-100">
@@ -36,21 +33,27 @@
     <!-- Main Content -->
     <main>
         <section id="appointment" class=" bg-gradient-to-br from-gray-500 to-gray-200 pb-7">
-            <div class="flex md:flex-row flex-col container">
+            <div class="flex md:flex-row flex-col container justify-between max-w-7xl ">
                 <!-- Left Side - Image and Text -->
-                <div class="md:w-1/2 flex items-center justify-center p-6  md:ml-20">
-                    <div class="max-w-4xl mx-auto text-center">
-                        <h1 class="text-4xl tracking-tight md:text-6xl font-bold text-gray-800 mb-6 font-sans text-left">
-                            Welcome to phine glows hair
+                <div class="flex items-center justify-center p-6 max-w-2xl md:ml-10">
+                    <div class=" mx-auto text-center">
+                        <h1
+                            class="text-3xl tracking-tight md:text-7xl font-bold text-gray-800 md:mb-6 font-rail md:text-left text-center">
+                            Welcome to phine Glows hair
                         </h1>
-                        <p class=" md:text-left text-xl md:text-2xl text-gray-700 mb-8 font-mono pb-15">
+                        <p class=" md:text-left text-xl md:text-2xl text-gray-700 md:pb-15 mb-8 font-mono mt-4 md">
                             what service do you need?
                         </p>
-                        <div class="flex items-center justify-center text-lg md:text-3xl text-white font-light translate-x-20">
-                            
+                        <div
+                            class="flex flex-col md:flex-row items-center justify-center text-lg md:text-4xl text-white font-light md:translate-x-5">
                             <span>Book an appointment with us now</span>
-                            <svg class="w-10 h-10 ml-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            <svg class="w-10 h-10 ml-3 hidden md:block text-white" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="md:hidden" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                                <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
                             </svg>
                         </div>
                     </div>
@@ -58,8 +61,7 @@
                 </div>
 
                 <!-- Right Side - Booking Form -->
-                <div
-                    class="bg-gray-700 px-6 shadow-xl flex flex-col items-center justify-center  mx-auto max-w-2xs">
+                <div class="bg-gray-700 px-6 shadow-xl flex flex-col items-center justify-center max-w-[350px] md:mx-5 mx-auto">
                     <h3
                         class="text-white text-2xl font-light text-center mb-4 max-w-[200px] mx-auto mt-10 tracking-tight">
                         BOOK AN
@@ -70,26 +72,24 @@
                             <!-- First Row -->
                             <input type="text" placeholder="First Name"
                                 class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs md:placeholder:text-sm font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
-                            <input type="text" placeholder="Surname Name"
+                            <input type="text" placeholder="Surname "
                                 class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs md:placeholder:text-sm font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
 
                         </div>
-                        <div class="flex flex-col gap-2 w-full">
+                        <div class="flex flex-col gap-3 w-full">
                             <!-- Email -->
-                            <label for="Email"></label>
                             <input type="email" placeholder="Email Address"
                                 class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs md:placeholder:text-sm font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
 
                             <!-- Phone -->
-                            <label for="number"></label>
                             <input type="tel" placeholder="Phone Number" id="number" name="number"
                                 class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs md:placeholder:text-sm font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
 
 
 
                             <!-- Date -->
-                            <input type="date" placeholder="Select Date"
-                                class=" px-2 py-2 placeholder:text-xs md:placeholder:text-sm rounded-sm border-0 focus:ring-2 focus:ring-gray-600 outline-none text-xs font-mono">
+                            <input type="date"
+                                class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs md:placeholder:text-sm font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-gray-300 bg-gray-50 outline-0">
                             <!-- Time -->
                             <select
                                 class="rounded-sm border-0 focus:ring-1 focus:ring-slate-800 w-full placeholder:text-xs md:placeholder:text-sm font-mono text-sm px-4 py-2 border-gray-300 shadow-sm transition duration-300 ease-in-out transform focus:outline-gray-300 bg-gray-50 outline-0">
@@ -115,46 +115,35 @@
                                 <option value="consultation">Color Consultation</option>
                             </select>
 
-                            <!-- Comments -->
-                            <!-- <textarea placeholder="Additional Comments (Optional)" rows="2"
-                            class=" px-2 py-2 rounded border-0 focus:ring-2 focus:ring-gray-600 outline-none resize-none"></textarea> -->
+
                         </div>
 
-                        <!-- Submit Button -->
-                        <!-- From Uiverse.io by ayman-ashine -->
-                       
 
 
                         <button
                             class="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-gray-500 rounded-md group mx-auto w-[80%] mt-4">
                             <span
                                 class="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-gray-700 rounded group-hover:-mr-4 group-hover:-mt-4">
-                                <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                                <span
+                                    class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
                             </span>
                             <span
                                 class="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-gray-700 rounded group-hover:-ml-4 group-hover:-mb-4">
-                                <span class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+                                <span
+                                    class="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
                             </span>
                             <span
                                 class="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-gray-600 rounded-md group-hover:translate-x-0"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="23px" fill="#ffffff">
-                                    <path
-                                        d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="23px"
+                                fill="#ffffff">
+                                <path
+                                    d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                            </svg>
                             <span
                                 class="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-white">
                                 Book Appointment</span>
                         </button>
 
-                        <!-- <a href="whatsapplink://send?phone=9185963260&text=Hello%20Phine%20Glow%20Hairs,%20I%20would%20like%20to%20book%20an%20appointment."
-                            class="inline-flex items-center justify-center rounded border border-white/30 px-4 py-2 font-medium hover:bg-slate-800 transition bg-slate-900 mx-auto mt-3 w-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="21px"
-                                fill="#ffffff">
-                                <path
-                                    d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
-                            </svg>
-                            <span class="font-sans text-white ml-2 italic">Book Appointment</span>
-                        </a> -->
                     </form>
 
                     <!-- Additional Info -->
@@ -212,13 +201,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="mt-3 text-center">
-                        <p class="text-black text-sm">We'll confirm your appointment within 24 hours</p>
-                        <p class="text-black text-xs mt-1 pb-5">For same-day appointments, please call us directly
-                        </p>
-                    </div> -->
+
                 </div>
-            </div>
             </div>
         </section>
         <section class="py-16 mt-20">

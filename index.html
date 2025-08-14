@@ -11,7 +11,7 @@
 
 <body>
     <!-- Sticky Header with Navigation -->
-    <header id="home" class="sticky top-0 z-50 md:border-b md:border-border backdrop-blur">
+    <header id="home" class="sticky top-0 z-50 md:border-b backdrop-blur">
         <div class="container mx-auto ">
             <nav class="flex items-center justify-between py-5 px-3">
                 <!-- Brand/Logo -->
@@ -19,24 +19,24 @@
                     <span class="text-xl">Phine Glow Hair</span>
                 </a>
                 <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex items-center gap-6 text-sm">
+                <div class=" md:flex items-center gap-6 text-sm">
                     <a href="/" class="text-slate-600 hover:text-slate-900 transition">Home</a>
-                    <a href="#reviews" class="text-slate-600 hover:text-slate-900 transition">Products
-                        <a href="contact.html" class="text-slate-600 hover:text-slate-900 transition">Contact</a>
-                        <a href="contact.html" class="group relative flex justify-center items-center text-zinc-600 text-sm font-bold">
-                            <div
-                                class="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-slate-900 to-slate-900 p-2.5 rounded-full cursor-pointer duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff">
-                                    <path
-                                        d="M680-80v-120H560v-80h120v-120h80v120h120v80H760v120h-80Zm-480-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z" />
-                                </svg><span class="text-[0px] group-hover:text-sm duration-300 text-white">Book Now</span>
-                            </div>
-                        </a>
+                    <a href="#reviews" class="text-slate-600 hover:text-slate-900 transition">Products</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-slate-900 transition">Contact</a>
+                    <a href="contact.html" class="md:hidden   hover:bg-slate-800 transition items-center rounded-full bg-slate-900 text-white px-4 py-2 hover:scale-105">Book now</a>
+                    <a href="contact.html"
+                        class="group relative md:flex justify-center items-center text-zinc-600 text-sm font-bold hidden">
+                        <div
+                            class="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br from-slate-900 to-slate-900 p-2.5 rounded-full cursor-pointer duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#ffffff">
+                                <path
+                                    d="M680-80v-120H560v-80h120v-120h80v120h120v80H760v120h-80Zm-480-80q-33 0-56.5-23.5T120-240v-480q0-33 23.5-56.5T200-800h40v-80h80v80h240v-80h80v80h40q33 0 56.5 23.5T760-720v244q-20-3-40-3t-40 3v-84H200v320h280q0 20 3 40t11 40H200Zm0-480h480v-80H200v80Zm0 0v-80 80Z" />
+                            </svg><span class="text-[0px] group-hover:text-sm duration-300 text-white">Book
+                                Now</span>
+                        </div>
+                    </a>
 
-                        <!-- <a href="contact.html"
-                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 text-white px-4 py-2 hover:bg-slate-800 transition shadow-sm">
-                    Book Now
-                </a> -->
                 </div>
             </nav>
         </div>
